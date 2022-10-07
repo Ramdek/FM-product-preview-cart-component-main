@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Product preview cart compenent main](https://ramdek.github.io/FM-product-preview-cart-component-main/)
 
 ## Author
 
-- Frontend Mentor - [@Ramdek](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Ramdek](https://www.frontendmentor.io/profile/Ramdek)
