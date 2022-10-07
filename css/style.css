@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Style */
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#container{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    align-items: center;
+    overflow: hidden;
+}
+
+div#container img{
+    border-radius: 10px 0 0 10px;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+div#text{
+    flex-direction: column;
+    width: calc(300px - 60px);
+    height: 100%;
+    padding: 30px;
+}
+
+div.attribution{
+    position: relative;
+    top: -40px;
+    margin: 10px;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+
+p, div#text p:nth-child(4) s{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+div#text > p:nth-child(1){
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+
+div#text p:nth-child(4){
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 1.75rem;
+}
+
+div#text p:nth-child(4) s{
+    margin-left: 20px;
+    vertical-align: 25%;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button:active{
+    background-color: #1A4031;
+    transition: all .5s ease-out;
+}
+
+button p{
+    padding: 0 3rem;
+    color: hsl(0, 0%, 100%);
+}
+
+button p::before{
+    vertical-align: -15%;
+    content:
+        url("../images/icon-cart.svg")
+        " ";
+}
+
+@media screen and (max-width: 700px) {
+    
+    div#container{
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+    }
+
+    div#text > p:nth-child(1){
+        margin-top: 0;
+    }
+
+    div#container img{
+        background-image: url("../images/image-product-mobile.jpg");
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        background-position: 50% 50%;
+        height: 30vh;
+    }
+
+    div#text{
+        flex-direction: column;
+        width: calc(90vw - 60px);
+        height: 50%;
+        padding: 30px;
+    }
+
+}
